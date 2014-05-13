@@ -1,0 +1,38 @@
+#:kivy 1.8.0
+
+<GamesList>:
+    orientation: 'vertical'
+    BoxLayout:
+        size_hint_y: None
+        height: dp(50)
+        Button:
+            text: '< Menu'
+            size_hint_x: None
+            width: dp(100)
+        Label:
+            text: 'Games'
+            font_size: '18dp'
+            color: (0,.5,0,1)
+    ScrollView:
+        BoxLayout:
+            id: games
+            orientation: 'vertical'
+            size_hint_y: None
+            height: len(self.children)*dp(100)
+
+<GameButton>:
+    canvas:
+        Color:
+            rgb: (0,.5,0)
+        Line:
+            rectangle: self.pos[0], self.pos[1], self.size[0], self.size[1]
+            width: dp(1)
+    size_hint_y: None
+    height: dp(100)
+    font_size: '18dp'
+    text_size: self.size
+    valign: 'middle'
+    halign: 'center'
+    color: (0,0,0,1)
+    background_normal: 'image/clear_white.png'
+    background_down: 'image/primary.png'
