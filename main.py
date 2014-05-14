@@ -39,7 +39,7 @@ from datetime import datetime
 from Chessnut.game import Game, InvalidMove
 
 from scorebook.chessboard import ChessboardUI
-from scorebook.reviewui import GameWidget, MoveButton
+from scorebook.reviewui import GameWidgetScreen, GameWidget
 from scorebook.store import ScorebookGame, get_games
 from scorebook.record import GameRecorderScreen
 from scorebook.menu import MenuLayoutScreen
@@ -53,32 +53,44 @@ class GamesListScreen(Screen):
         self.games = GamesList()
         self.add_widget(self.games)
 
+    def on_enter(self, *args):
+        self.games.read_games()
+
 
 class GamesList(BoxLayout):
     def __init__(self, **kwargs):
         super(GamesList, self).__init__(**kwargs)
-        games = get_games()
-        for game in games:
+        self.games = get_games()
+        for game in self.games:
             name = '{} vs {} ({})'.format(game.white, game.black, game.date)
             self.ids.games.add_widget(GameButton(text=name))
 
+    def go_to(self, where):
+        self.parent.parent.current = where
+
+    def open_game(self, obj):
+        for game in self.games:
+            if game.id == obj.game_id:
+                self.parent.parent.switch_to(GameWidgetScreen(game=game))
+
+    def read_games(self):
+        self.ids.games.clear_widgets()
+        self.games = get_games()
+        for game in self.games:
+            name = '{} vs {} ({})'.format(game.white, game.black, datetime.strptime(game.date, "%Y-%m-%d %H:%M:%S").strftime('%Y.%m.%d'))
+            b = GameButton(text=name, game_id=game.id)
+            b.bind(on_release=self.open_game)
+            self.ids.games.add_widget(b)
+
+
 class GameButton(Button):
-    pass
+    game_id = NumericProperty()
 
 class ScorebookApp(App):
-    colors = {
-        'black': (0,0,0),
-        'white': (1,1,1)
-    }
-    # game = None
 
     def build(self):
-        # self.game = Game()
-        # self.game.apply_move('e2e4')
-        # self.game.apply_move('b7b6')
-        # self.game.apply_move('g1h3')
 
-        self.sm = ScreenManager()
+        self.sm = ScreenManager(transition=FadeTransition())
         # MENU SCREEN
         menu_screen = MenuLayoutScreen(name='menu')
         self.sm.add_widget(menu_screen)
@@ -91,7 +103,7 @@ class ScorebookApp(App):
         games = GamesListScreen(name='games')
         self.sm.add_widget(games)
 
-        self.sm.current = 'games'
+        self.sm.current = 'recorder'
         return self.sm
 
     def on_pause(self):
@@ -107,10 +119,6 @@ class ScorebookApp(App):
         else:
             return self.colors[color]+(opacity,)
 
-    #
-    # def on_stop(self):
-    #     self.dm.store.store_sync()
-# Window._clearcolor = (.25,.75,.79,1)
 Window.clearcolor = (1,1,1,1)
 app = ScorebookApp()
 if __name__ == '__main__':

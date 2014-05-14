@@ -80,7 +80,7 @@ Builder.load_string('''
 <MenuItem>:
     canvas.before:
         Color:
-            rgb: (.65,.35,0)
+            rgb: (.65,.19,0)
         Rectangle:
             pos: self.pos
             size: self.size

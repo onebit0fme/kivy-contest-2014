@@ -54,16 +54,7 @@ Builder.load_string('''
         Color:
             rgb: (0,.5,0)
         Line:
-            points: (self.pos[0], self.pos[1], self.pos[0]+self.size[0], self.pos[1])
-            width: dp(2)
-        Line:
-            points: (self.pos[0], self.pos[1], self.pos[0], self.pos[1]+self.size[1])
-            width: dp(2)
-        Line:
-            points: (self.pos[0], self.pos[1]+self.size[1], self.pos[0]+self.size[0], self.pos[1]+self.size[1])
-            width: dp(2)
-        Line:
-            points: (self.pos[0]+self.size[0], self.pos[1]+self.size[1], self.pos[0]+self.size[0], self.pos[1])
+            rectangle: self.pos[0], self.pos[1], self.size[0], self.size[1]
             width: dp(2)
     cols: 8
     rows: 8
@@ -140,9 +131,7 @@ class ChessboardUI(BoxLayout):
         left_box = BoxLayout(orientation='vertical', size_hint_x=None, width=dp(30))
         for n in range(8, -1, -1):
             if n == 0:
-                minimz = Button(size_hint_y=None, height=dp(30))
-                left_box.add_widget(minimz)
-                minimz.bind(on_release=self.minimz)
+                left_box.add_widget(Label())
                 break
             left_box.add_widget(Label(text=str(n), color=(0,0,0,1)))
 
@@ -211,9 +200,9 @@ class ChessboardUI(BoxLayout):
         self.labels[2].width = dp(30)*self.minimize
         self.labels[3].width = dp(30)*self.minimize
 
-    def minimz(self, obj):
-        print 'minimizing'
-        self.parent.height = self.parent.width = dp(200)
+    # def minimz(self, obj):
+    #     print 'minimizing'
+    #     self.parent.height = self.parent.width = dp(200)
 
 class ChessboardGrid(GridLayout):
     '''
@@ -285,7 +274,14 @@ class Chessboard(GridLayout):
                 man = Chessman(symbol=board[i])
                 cell.add_widget(man)
 
-
+    def update(self):
+        board = self.game.board._position
+        for n, cell in enumerate(self.children):
+            cell.clear_widgets()
+            i = 63 - n
+            if board[i] != ' ':
+                man = Chessman(symbol=board[i])
+                cell.add_widget(man)
 
     def on_touch_down(self, touch):
         for cell in self.children:
@@ -313,6 +309,7 @@ class Chessboard(GridLayout):
                     cell.add_widget(self.grabbed)
                     # self.grabbed.pos = cell.pos
                     self.move_made = False if self.move_made else True
+                    self.update()
                 except InvalidMove:
                     print 'Not Legal Move'
                     self.grabbed.pos = self.grabbed.parent.pos
