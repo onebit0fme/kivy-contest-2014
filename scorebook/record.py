@@ -186,11 +186,10 @@ class GameRecorder(BoxLayout):
 
     def save_game(self, obj, value=None):
         year, month, day = obj.year.text, obj.month.text, obj.day.text
-        r = obj.round.text
         if year and month and day:
             try:
-                datetime.date(year, month, day)
-                date = "{0}-{1}-{2} 00:00:00".format(int(year), int(month), int(day))
+                datetime.date(int(year), int(month), int(day))
+                date = "{0}-{1}-{2} 00:00:00".format(year, month, day)
             except:
                 date = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         else:
