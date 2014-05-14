@@ -14,7 +14,7 @@ def get_games():
 
 
 class ScorebookGame(object):
-    def __init__(self, white='', black='', event='', date='', moves='', round=1, id=None):
+    def __init__(self, white='', black='', event='', date='', moves='', round='1', id=None):
         # things that is stored
         self.id = int(id) if id else None
         self.white = white

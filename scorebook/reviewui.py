@@ -61,7 +61,7 @@ Builder.load_string('''
     color: (1,1,1,1)
     size_hint: (None, None)
     width: self.texture_size[0]+dp(30)
-    height: dp(50)
+    height: dp(20)
 
 <MoveList>:
     canvas:
@@ -123,7 +123,7 @@ Builder.load_string('''
             text_size: self.size
             valign: 'middle'
             halign: 'center'
-            font_size: '25dp'
+            font_size: '16dp'
             color: (0,.5,0,1)
         Label:
             text: 'vs'
@@ -138,7 +138,7 @@ Builder.load_string('''
             text_size: self.size
             valign: 'middle'
             halign: 'center'
-            font_size: '25dp'
+            font_size: '16dp'
             color: (0,.5,0,1)
     Label:
         text: 'Date: '+root.date
@@ -154,6 +154,12 @@ Builder.load_string('''
         color: (0,0,0,1)
     Label:
         text: 'Event: '+root.event
+        text_size: self.size
+        valign: 'middle'
+        halign: 'left'
+        color: (0,0,0,1)
+    Label:
+        text: 'FEN: '+root.fen
         text_size: self.size
         valign: 'middle'
         halign: 'left'
@@ -224,6 +230,7 @@ class GameInfo(BoxLayout):
     date = StringProperty('')
     moves = StringProperty('')
     event = StringProperty('')
+    fen = StringProperty('')
 
 def none(touch):
     pass
@@ -259,7 +266,7 @@ class GameWidget(BoxLayout):
         # self.add_widget(self.board)
 
         nav = BoxLayout(size_hint_y=None, height=dp(50))
-        b = Button(text="<< Games <<", size_hint_x=None, width=dp(100), background_normal='image/clear_white.png', color=(0,.5,0,1))
+        b = Button(text="<< Games", size_hint_x=None, width=dp(100), background_normal='image/clear_white.png', color=(0,.5,0,1))
         b.bind(on_release=self.go_back)
         nav.add_widget(b)
 
@@ -271,10 +278,11 @@ class GameWidget(BoxLayout):
                             date=datetime.datetime.strptime(self.game.date, "%Y-%m-%d %H:%M:%S").strftime('%Y.%m.%d'),
                             round=self.game.round,
                             moves=str(int(ceil(len(self.game.moves_list)/2.0))),
-                            event=self.game.event)
+                            event=self.game.event,
+                            fen=str(self.game.game))
 
 
-        moves_table=StackLayout(padding=dp(10), spacing=dp(10))
+        moves_table=StackLayout(padding=dp(5), spacing=dp(5))
         for move in self.game.game.move_history:
             moves_table.add_widget(MoveLabel(text=move))
         self.add_widget(info_box)

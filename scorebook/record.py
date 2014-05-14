@@ -150,12 +150,17 @@ class GameRecorder(BoxLayout):
 
         self.game = Game()
         side_box = BoxLayout(orientation='vertical')
-        back_button = CustomButton(text='<< Games <<', size_hint_y=None, height=dp(50))
+        b = BoxLayout(size_hint_y=None, height=dp(50))
+        back_button = CustomButton(text='<< Games')
+        undo_button = CustomButton(text='Reset')
+        undo_button.bind(on_release=self.reset)
         back_button.bind(on_release=self.go_back)
+        b.add_widget(back_button)
+        b.add_widget(undo_button)
 
         save_button = CustomButton(text='Save game', size_hint_y=None, height=dp(50))
         save_button.bind(on_release=self.save_popup)
-        side_box.add_widget(back_button)
+        side_box.add_widget(b)
         side_box.add_widget(save_button)
 
 
@@ -185,6 +190,13 @@ class GameRecorder(BoxLayout):
         self.parent.bind(on_leave=p.dismiss)
         p.open()
 
+    def reset(self, obj):
+        # self.board.all_moves = []
+        self.board.actual_board.change_game([])
+        self.game = self.board.actual_board.game
+        self.board.move_made = False if self.board.move_made else True
+        # self.change_moves(None, None)
+
     def save_popup(self, obj):
         p = SaveFormPopup(title="Save game")
         p.bind(save=self.save_game)
@@ -194,15 +206,17 @@ class GameRecorder(BoxLayout):
         self.parent.parent.current = 'games'
 
     def save_game(self, obj, value=None):
-        if obj.year and obj.month and obj.day:
+        year, month, day = obj.year.text, obj.month.text, obj.day.text
+        r = obj.round.text
+        if year and month and day:
             try:
-                datetime.date(obj.year, obj.month, obj.day)
-                date = "{0}-{1}-{2} 00:00:00".format(obj.year, obj.month, obj.day)
-            except ValueError:
+                datetime.date(year, month, day)
+                date = "{0}-{1}-{2} 00:00:00".format(int(year), int(month), int(day))
+            except:
                 date = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
         else:
             date = str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
-        g = ScorebookGame(white=obj.white.text, black=obj.black.text, event=obj.event.text, date=date, round=obj.round, moves=' '.join(self.game.move_history))
+        g = ScorebookGame(white=obj.white.text, black=obj.black.text, event=obj.event.text, date=str(date), round=obj.round.text, moves=' '.join(self.game.move_history))
         g.save()
         obj.dismiss()
         self.parent.parent.current = 'games'
