@@ -13,7 +13,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Chess Scorebook$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1399840841153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Chess Scorebook$main.coverage" NAME="main Coverage Results" MODIFIED="1400036488355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Chess Scorebook$main.coverage" NAME="main Coverage Results" MODIFIED="1400036633589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Chess Scorebook$store.coverage" NAME="store Coverage Results" MODIFIED="1399861053518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scorebook" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -60,7 +60,7 @@
       <file leaf-file-name="record.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scorebook/record.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="66" selection-start="6973" selection-end="6973" vertical-scroll-proportion="0.44893113" vertical-offset="2826" max-vertical-offset="3420">
+            <state line="201" column="66" selection-start="6973" selection-end="6973" vertical-scroll-proportion="0.4536817" vertical-offset="2824" max-vertical-offset="3420">
               <folding>
                 <element signature="e#26#50#0" expanded="true" />
               </folding>
@@ -484,10 +484,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -933,7 +933,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/record.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="66" selection-start="6973" selection-end="6973" vertical-scroll-proportion="0.44893113" vertical-offset="2826" max-vertical-offset="3420">
+        <state line="201" column="66" selection-start="6973" selection-end="6973" vertical-scroll-proportion="0.4536817" vertical-offset="2824" max-vertical-offset="3420">
           <folding>
             <element signature="e#26#50#0" expanded="true" />
           </folding>
