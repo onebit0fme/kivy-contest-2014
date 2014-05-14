@@ -70,8 +70,3 @@ class ScorebookGame(object):
             self.id = ScorebookGame.get_unique_id()
         store = JsonStore('games.json')
         store[str(self.id)] = self.json_dict
-
-# g = ScorebookGame('the rest of the world', 'Garry Kasparow', 'today', 'e2e4 r4t4 j6j3 k2k5 l6l5', 1)
-# g.save()
-# print get_games()
-# print ScorebookGame.get_unique_id()

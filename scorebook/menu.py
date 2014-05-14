@@ -1,52 +1,18 @@
 __author__ = 'onebit0fme'
 
-from kivy.app import App
-from kivy.core.window import Window
-from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.stacklayout import StackLayout
-from kivy.uix.floatlayout import FloatLayout
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.relativelayout import RelativeLayout
-from kivy.uix.anchorlayout import AnchorLayout
-from kivy.graphics import Color, Rectangle, Line, Ellipse, Rotate
 from kivy.uix.label import Label
-from kivy.uix.scatterlayout import Scatter
-from kivy.uix.slider import Slider
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.textinput import TextInput
-from kivy.uix.widget import Widget, EventLoop
-from kivy.uix.button import Button
-from kivy.uix.bubble import Bubble, BubbleButton
-from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
-from kivy.clock import Clock
-from functools import partial
-from kivy.event import EventDispatcher
-from kivy.uix.screenmanager import Screen, ScreenManager, SlideTransition, FadeTransition, SwapTransition, WipeTransition, FallOutTransition, RiseInTransition, NoTransition
-from kivy.animation import Animation
+from kivy.properties import StringProperty
+from kivy.uix.screenmanager import Screen, ScreenManager
 from kivy.metrics import dp
-from kivy.uix.popup import Popup
-from kivy.uix.carousel import Carousel
-from kivy.uix.settings import SettingsWithSidebar, SettingsWithSpinner, SettingsWithTabbedPanel, SettingsWithNoMenu, Settings, SettingsPanel
-import datetime
-from kivy.config import ConfigParser
-import webbrowser
-from pprint import pprint
-import re
-from datetime import datetime
+from kivy.lang import Builder
 
 from Chessnut.game import Game, InvalidMove
-
-from scorebook.chessboard import ChessboardUI
-from scorebook.reviewui import GameWidget, MoveButton
-from scorebook.store import ScorebookGame
-from scorebook.record import GameRecorder
-# from main import app
 
 import types
 from random import choice
 
-from kivy.lang import Builder
+from scorebook.chessboard import ChessboardUI
 
 Builder.load_string('''
 <ModeScreen>:
@@ -209,7 +175,7 @@ class ChessMenu(ChessboardUI):
         menu_items = ['Review games', 'Record game']
         places = range(24,40)
         for item in menu_items:
-            print self.actual_board.children
+            # print self.actual_board.children
             place = places.pop(choice(range(0,len(places))))
             self.actual_board.children[place].add_widget(MenuItem(text=item, navigate_to=item, font_size='20dp'))
             self.actual_board.action_chessman = self.action_chessman
@@ -231,7 +197,7 @@ def alt_on_touch_up(self, touch):
                     if hasattr(cell.children[0], 'navigate_to'):
                         menu_item = cell.children[0]
                         if self.grabbed.symbol == self.action_chessman:
-                            print 'WE HAVE A MATCH', menu_item.navigate_to
+                            # print 'WE HAVE A MATCH', menu_item.navigate_to
                             self.go_to = menu_item.navigate_to
 
                         # move if no match
@@ -242,7 +208,7 @@ def alt_on_touch_up(self, touch):
                         cell.clear_widgets()
                         self.children[new_place].add_widget(menu_item)
 
-                        print 'got ya'
+                        # print 'got ya'
 
                 self.grabbed.parent.clear_widgets()
 

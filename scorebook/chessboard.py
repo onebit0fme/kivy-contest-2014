@@ -1,39 +1,11 @@
 __author__ = 'onebit0fme'
-from kivy.app import App
-from kivy.core.window import Window
-from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.relativelayout import RelativeLayout
-from kivy.uix.anchorlayout import AnchorLayout
-from kivy.graphics import Color, Rectangle, Line, Ellipse, Rotate
 from kivy.uix.label import Label
-from kivy.uix.scatterlayout import Scatter
-from kivy.uix.slider import Slider
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.textinput import TextInput
-from kivy.uix.widget import Widget, EventLoop
-from kivy.uix.button import Button
-from kivy.uix.bubble import Bubble, BubbleButton
-from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
-from kivy.clock import Clock
-from functools import partial
-from kivy.event import EventDispatcher
-from kivy.uix.screenmanager import Screen, ScreenManager, SlideTransition, FadeTransition, SwapTransition, WipeTransition, FallOutTransition, RiseInTransition, NoTransition
-from kivy.animation import Animation
+from kivy.properties import NumericProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
 from kivy.metrics import dp
-from kivy.uix.popup import Popup
-from kivy.uix.carousel import Carousel
-from kivy.uix.settings import SettingsWithSidebar, SettingsWithSpinner, SettingsWithTabbedPanel, SettingsWithNoMenu, Settings, SettingsPanel
-import datetime
-from kivy.config import ConfigParser
-import webbrowser
-from pprint import pprint
-import re
 from kivy.lang import Builder
-from Chessnut.game import InvalidMove
-from kivy.utils import Platform
 from Chessnut.game import Game, InvalidMove
 
 Builder.load_string('''
@@ -263,8 +235,8 @@ class Chessboard(GridLayout):
         # apply move history
         for move in all_moves:
             self.game.apply_move(move)
-        print self.game.move_history
-        print self.game.board
+        # print self.game.move_history
+        # print self.game.board
         # populate new position
         board = self.game.board._position
         for n, cell in enumerate(self.children):
@@ -288,9 +260,9 @@ class Chessboard(GridLayout):
             if cell.collide_point(*touch.pos):
                 if cell.children:
                     self.move_start = cell.name
-                    print self.move_start
+                    # print self.move_start
                     self.grabbed = cell.children[0]
-                    print self.grabbed.parent
+                    # print self.grabbed.parent
                     touch.grab(self.grabbed)
 
     def on_touch_move(self, touch):
@@ -317,8 +289,4 @@ class Chessboard(GridLayout):
         if self.grabbed:
             touch.ungrab(self.grabbed)
             self.grabbed = None
-        # if touch.grab_current is self:
-        #     touch.ungrab(self)
-        # else:
-        #     pass
 

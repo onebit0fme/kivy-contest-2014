@@ -103,7 +103,7 @@ class ScorebookApp(App):
         games = GamesListScreen(name='games')
         self.sm.add_widget(games)
 
-        self.sm.current = 'recorder'
+        self.sm.current = 'menu'
         return self.sm
 
     def on_pause(self):
@@ -120,6 +120,5 @@ class ScorebookApp(App):
             return self.colors[color]+(opacity,)
 
 Window.clearcolor = (1,1,1,1)
-app = ScorebookApp()
 if __name__ == '__main__':
-    app.run()
+    ScorebookApp().run()

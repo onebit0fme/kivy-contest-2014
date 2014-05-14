@@ -1,45 +1,24 @@
 __author__ = 'onebit0fme'
-from kivy.app import App
-from kivy.core.window import Window
-from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
-from kivy.uix.stacklayout import StackLayout
-from kivy.uix.floatlayout import FloatLayout
 from kivy.uix.gridlayout import GridLayout
-from kivy.uix.relativelayout import RelativeLayout
-from kivy.uix.anchorlayout import AnchorLayout
-from kivy.graphics import Color, Rectangle, Line, Ellipse, Rotate
 from kivy.uix.label import Label
-from kivy.uix.scatterlayout import Scatter
-from kivy.uix.slider import Slider
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.textinput import TextInput
-from kivy.uix.widget import Widget, EventLoop
 from kivy.uix.button import Button
-from kivy.uix.bubble import Bubble, BubbleButton
-from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
-from kivy.clock import Clock
-from functools import partial
-from kivy.event import EventDispatcher
-from kivy.uix.screenmanager import Screen, ScreenManager, SlideTransition, FadeTransition, SwapTransition, WipeTransition, FallOutTransition, RiseInTransition, NoTransition
-from kivy.animation import Animation
+from kivy.properties import BooleanProperty
+from kivy.uix.screenmanager import Screen
 from kivy.metrics import dp
 from kivy.uix.popup import Popup
-from kivy.uix.carousel import Carousel
-from kivy.uix.settings import SettingsWithSidebar, SettingsWithSpinner, SettingsWithTabbedPanel, SettingsWithNoMenu, Settings, SettingsPanel
-import datetime
-from kivy.config import ConfigParser
-import webbrowser
-from pprint import pprint
-import re
+from kivy.lang import Builder
 
-from Chessnut.game import Game, InvalidMove
+import datetime
+
+from Chessnut.game import Game
 
 from scorebook.chessboard import ChessboardUI
-from scorebook.reviewui import GameWidget, MoveButton, MoveLabel
+from scorebook.reviewui import MoveButton, MoveLabel
 from scorebook.store import ScorebookGame
 
-from kivy.lang import Builder
 
 Builder.load_string('''
 <CustomButton>:

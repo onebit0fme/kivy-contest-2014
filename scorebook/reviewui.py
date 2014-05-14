@@ -1,39 +1,14 @@
 __author__ = 'onebit0fme'
-from kivy.app import App
-from kivy.core.window import Window
-from kivy.uix.gridlayout import GridLayout
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.stacklayout import StackLayout
-from kivy.uix.floatlayout import FloatLayout
-from kivy.uix.gridlayout import GridLayout
-from kivy.uix.relativelayout import RelativeLayout
 from kivy.uix.anchorlayout import AnchorLayout
-from kivy.graphics import Color, Rectangle, Line, Ellipse, Rotate
 from kivy.uix.label import Label
-from kivy.uix.scatterlayout import Scatter
-from kivy.uix.slider import Slider
-from kivy.uix.scrollview import ScrollView
-from kivy.uix.textinput import TextInput
-from kivy.uix.widget import Widget, EventLoop
 from kivy.uix.button import Button
-from kivy.uix.bubble import Bubble, BubbleButton
-from kivy.properties import NumericProperty, ReferenceListProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
+from kivy.properties import NumericProperty, ObjectProperty, ListProperty, BooleanProperty, StringProperty
 from kivy.clock import Clock
-from functools import partial
-from kivy.event import EventDispatcher
-from kivy.uix.screenmanager import Screen, ScreenManager, SlideTransition, FadeTransition, SwapTransition, WipeTransition, FallOutTransition, RiseInTransition, NoTransition
-from kivy.animation import Animation
+from kivy.uix.screenmanager import Screen
 from kivy.metrics import dp
-from kivy.uix.popup import Popup
-from kivy.uix.carousel import Carousel
-from kivy.uix.settings import SettingsWithSidebar, SettingsWithSpinner, SettingsWithTabbedPanel, SettingsWithNoMenu, Settings, SettingsPanel
 import datetime
-from kivy.config import ConfigParser
-import webbrowser
-from pprint import pprint
-import re
-
-from Chessnut.game import Game, InvalidMove
 from scorebook.chessboard import ChessboardUI
 from scorebook.store import ScorebookGame
 from kivy.lang import Builder
@@ -197,7 +172,7 @@ class MoveList(BoxLayout):
             # self.current_move = len(self.game.move_history)-1
 
     def change_current(self, obj):
-        print 'pressed on move', obj
+        # print 'pressed on move', obj
         self.current_move = obj.move_number
 
     def next(self):
@@ -312,10 +287,10 @@ class GameWidget(BoxLayout):
         self.parent.parent.current = 'games'
 
     def change_to_move(self, obj, value):
-        print obj, value
+        # print obj, value
         self.board.board.all_moves = self.game.game.move_history[:value+1]
-        print self.game.game.move_history
-        print self.game.game.move_history[:value]
+        # print self.game.game.move_history
+        # print self.game.game.move_history[:value]
 
     def on_touch_down(self, touch):
         if self.board.board.collide_point(*touch.pos):
@@ -375,7 +350,7 @@ class GameWidget(BoxLayout):
             self.grabbed = None
 
     def change_orient(self, obj, size):
-        print self.board_orientation
+        # print self.board_orientation
         orientation = 'vertical' if self.height > self.width else 'horizontal'
         if self.board_orientation != orientation:
             self.board_orientation = orientation

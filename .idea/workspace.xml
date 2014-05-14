@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a6ecaa-b337-4d43-8a50-0d2942eea777" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/image/clear_white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/games.json" afterPath="$PROJECT_DIR$/games.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sandbox.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scorebook/chessboard.py" afterPath="$PROJECT_DIR$/scorebook/chessboard.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scorebook/menu.py" afterPath="$PROJECT_DIR$/scorebook/menu.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scorebook/record.py" afterPath="$PROJECT_DIR$/scorebook/record.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scorebook/reviewui.py" afterPath="$PROJECT_DIR$/scorebook/reviewui.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scorebook/store.py" afterPath="$PROJECT_DIR$/scorebook/store.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Chess Scorebook.iws" />
@@ -22,7 +23,7 @@
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Chess Scorebook$sandbox.coverage" NAME="sandbox Coverage Results" MODIFIED="1399840841153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Chess Scorebook$main.coverage" NAME="main Coverage Results" MODIFIED="1400041772817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Chess Scorebook$main.coverage" NAME="main Coverage Results" MODIFIED="1400042333107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Chess Scorebook$store.coverage" NAME="store Coverage Results" MODIFIED="1399861053518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scorebook" />
   </component>
   <component name="CreatePatchCommitExecutor">
@@ -40,10 +41,8 @@
       <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="36" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="1950">
-              <folding>
-                <element signature="e#145#169#0" expanded="true" />
-              </folding>
+            <state line="122" column="6" selection-start="4152" selection-end="4152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,81 +56,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scorebook/menu.py">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="25" selection-start="2923" selection-end="2923" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="3525">
+            <state line="17" column="13" selection-start="417" selection-end="417" vertical-scroll-proportion="0.7285714" vertical-offset="0" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="record.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scorebook/record.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="218" column="128" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.0" vertical-offset="3012" max-vertical-offset="3630">
-              <folding>
-                <element signature="e#26#50#0" expanded="true" />
-                <marker date="1400039864954" expanded="true" signature="4732:8408" placeholder="..." />
-                <marker date="1400039864954" expanded="true" signature="6625:6869" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reviewui.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="140" column="26" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.74801064" vertical-offset="1818" max-vertical-offset="5820">
-              <folding>
-                <element signature="e#26#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="chessboard.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="133" column="42" selection-start="3927" selection-end="3927" vertical-scroll-proportion="0.0" vertical-offset="3140" max-vertical-offset="4425">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="store.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scorebook/store.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="66" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="1215">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sandbox.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sandbox.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="14" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chessnut/game.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="4890">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="board.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1275">
-              <folding />
-            </state>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
           </provider>
         </entry>
       </file>
@@ -152,12 +85,13 @@
         <option value="$PROJECT_DIR$/Chessnut/game.py" />
         <option value="$PROJECT_DIR$/sandbox.py" />
         <option value="$PROJECT_DIR$/scorebook.kv" />
-        <option value="$PROJECT_DIR$/scorebook/chessboard.py" />
-        <option value="$PROJECT_DIR$/scorebook/menu.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/scorebook/menu.py" />
         <option value="$PROJECT_DIR$/scorebook/record.py" />
-        <option value="$PROJECT_DIR$/scorebook/store.py" />
         <option value="$PROJECT_DIR$/scorebook/reviewui.py" />
+        <option value="$PROJECT_DIR$/scorebook/chessboard.py" />
+        <option value="$PROJECT_DIR$/scorebook/store.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -193,6 +127,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -227,7 +162,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,6 +172,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -390,6 +325,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -411,9 +349,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -493,6 +428,11 @@
       <created>1399740792232</created>
       <updated>1399740792232</updated>
     </task>
+    <task id="LOCAL-00001" summary="Final changes.">
+      <created>1400041892645</created>
+      <updated>1400041892645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -504,7 +444,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.163142" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16540785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39801544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -512,31 +452,33 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1392" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39801544" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15861027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16540785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19294377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -551,24 +493,17 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Final changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Final changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="1275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="87" column="35" selection-start="3123" selection-end="3123" vertical-scroll-proportion="0.0" vertical-offset="761" max-vertical-offset="1680">
-          <folding>
-            <element signature="e#145#169#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -582,48 +517,41 @@
     <entry file="file://$PROJECT_DIR$/scorebook/menu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="166" column="39" selection-start="5149" selection-end="5149" vertical-scroll-proportion="0.0" vertical-offset="1187" max-vertical-offset="4125">
-          <folding />
+          <folding>
+            <element signature="e#27#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/record.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="149" column="43" selection-start="5246" selection-end="5246" vertical-scroll-proportion="0.0" vertical-offset="2241" max-vertical-offset="2835">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-            <marker date="1400039864954" expanded="true" signature="4732:8408" placeholder="..." />
-            <marker date="1400039864954" expanded="true" signature="6625:6869" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="183" column="57" selection-start="6116" selection-end="6273" vertical-scroll-proportion="0.0" vertical-offset="2745" max-vertical-offset="3450">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="50" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0" vertical-offset="246" max-vertical-offset="1065">
-          <folding />
+          <folding>
+            <element signature="e#26#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="75" selection-start="2059" selection-end="2059" vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="4335">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="390">
-          <folding />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -636,17 +564,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="68" selection-start="3891" selection-end="3891" vertical-scroll-proportion="0.0" vertical-offset="1325" max-vertical-offset="3030">
-          <folding>
-            <element signature="e#145#169#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -660,41 +584,32 @@
     <entry file="file://$PROJECT_DIR$/scorebook/record.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1350">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-            <marker date="1400039864954" expanded="true" signature="4732:8408" placeholder="..." />
-            <marker date="1400039864954" expanded="true" signature="6625:6869" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="183" column="57" selection-start="6116" selection-end="6273" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3450">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="1050">
-          <folding />
+          <folding>
+            <element signature="e#26#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="300" column="0" selection-start="9674" selection-end="10492" vertical-scroll-proportion="0.0" vertical-offset="4500" max-vertical-offset="4965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="390">
-          <folding />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -707,17 +622,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="33" selection-start="4043" selection-end="4043" vertical-scroll-proportion="0.0" vertical-offset="1122" max-vertical-offset="2445">
-          <folding>
-            <element signature="e#145#169#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -731,41 +642,32 @@
     <entry file="file://$PROJECT_DIR$/scorebook/record.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="0" selection-start="1798" selection-end="1798" vertical-scroll-proportion="0.0" vertical-offset="239" max-vertical-offset="1350">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-            <marker date="1400039864954" expanded="true" signature="4732:8408" placeholder="..." />
-            <marker date="1400039864954" expanded="true" signature="6625:6869" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="183" column="57" selection-start="6116" selection-end="6273" vertical-scroll-proportion="0.0" vertical-offset="2055" max-vertical-offset="3450">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/store.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="0" selection-start="660" selection-end="660" vertical-scroll-proportion="0.0" vertical-offset="287" max-vertical-offset="1050">
-          <folding />
+          <folding>
+            <element signature="e#26#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="300" column="0" selection-start="9674" selection-end="10492" vertical-scroll-proportion="0.0" vertical-offset="1710" max-vertical-offset="4965">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="6" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="390">
-          <folding />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,31 +680,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="113" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
-          <folding>
-            <element signature="e#145#169#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="84" selection-start="3737" selection-end="3737" vertical-scroll-proportion="0.0" vertical-offset="1657" max-vertical-offset="4215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="184" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="285">
-          <folding />
+          <folding>
+            <element signature="e#26#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,9 +708,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275">
-          <folding />
-        </state>
+        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook.kv">
@@ -834,9 +725,7 @@
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/kivy/uix/layout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="48" selection-start="765" selection-end="767" vertical-scroll-proportion="0.3321234" vertical-offset="117" max-vertical-offset="1335">
-          <folding />
-        </state>
+        <state line="20" column="48" selection-start="765" selection-end="767" vertical-scroll-proportion="0.3321234" vertical-offset="117" max-vertical-offset="1335" />
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/kivy/uix/boxlayout.py">
@@ -863,9 +752,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="6" selection-start="4152" selection-end="4152" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="25" selection-start="2923" selection-end="2923" vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="3525">
+        <state line="14" column="45" selection-start="390" selection-end="390" vertical-scroll-proportion="0.53984576" vertical-offset="0" max-vertical-offset="3615">
+          <folding>
+            <element signature="e#27#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scorebook/record.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="439" selection-end="439" vertical-scroll-proportion="0.4477612" vertical-offset="0" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="41" selection-start="404" selection-end="404" vertical-scroll-proportion="0.2112676" vertical-offset="0" max-vertical-offset="5445">
           <folding />
         </state>
       </provider>
@@ -877,68 +794,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="36" selection-start="3842" selection-end="3842" vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="1950">
-          <folding>
-            <element signature="e#145#169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/chessboard.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="42" selection-start="3927" selection-end="3927" vertical-scroll-proportion="0.0" vertical-offset="1340" max-vertical-offset="4425">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scorebook/record.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="128" selection-start="7720" selection-end="7720" vertical-scroll-proportion="0.0" vertical-offset="3012" max-vertical-offset="3630">
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.02640845" vertical-offset="0" max-vertical-offset="4470">
           <folding>
-            <element signature="e#26#50#0" expanded="true" />
-            <marker date="1400039864954" expanded="true" signature="4732:8408" placeholder="..." />
-            <marker date="1400039864954" expanded="true" signature="6625:6869" placeholder="..." />
+            <element signature="e#26#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scorebook/store.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="66" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="1215">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sandbox.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="14" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chessnut/board.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="352" selection-end="352" vertical-scroll-proportion="0.0" vertical-offset="97" max-vertical-offset="1275">
-          <folding />
+        <state line="1" column="0" selection-start="26" selection-end="26" vertical-scroll-proportion="0.025167786" vertical-offset="0" max-vertical-offset="1170">
+          <folding>
+            <element signature="e#26#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Chessnut/game.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.0" vertical-offset="427" max-vertical-offset="4890">
+        <state line="47" column="24" selection-start="1511" selection-end="1511" vertical-scroll-proportion="0.30201343" vertical-offset="480" max-vertical-offset="4890">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scorebook/reviewui.py">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="140" column="26" selection-start="4222" selection-end="4222" vertical-scroll-proportion="0.74801064" vertical-offset="1818" max-vertical-offset="5820">
-          <folding>
-            <element signature="e#26#50#0" expanded="true" />
-          </folding>
+        <state line="17" column="13" selection-start="417" selection-end="417" vertical-scroll-proportion="0.7285714" vertical-offset="0" max-vertical-offset="450">
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
